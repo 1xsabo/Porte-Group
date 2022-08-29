@@ -68,13 +68,13 @@ var swiper = new Swiper(".projects-Swiper", {
     spaceBetween:15,
     breakpoints:{
       276:{
-          slidesPerView:1,
-      },
-      576:{
           slidesPerView:2,
       },
       998:{
           slidesPerView:3,
+      },
+      1025:{
+        slidesPerView:4,
       },
     },
     loop:true,
