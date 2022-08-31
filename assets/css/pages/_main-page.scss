@@ -1978,3 +1978,73 @@
         }
     }
 }
+@media (min-width:1765px) and (max-width:1960px){
+    #slider {
+        margin-top: 100px;
+        .slider-box {
+            .slider-text {
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                width: 40%;
+                h2 {
+                    font-size: 80px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1960px) and (max-width:2120px){
+    #slider {
+        margin-top: 100px;
+        .slider-box {
+            .slider-text {
+                position: absolute;
+                top: 30%;
+                left: 15%;
+                width: 30%;
+                h2 {
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:2120px) and (max-width:2548px){
+    #slider {
+        margin-top: 100px;
+        .slider-box {
+            .slider-text {
+                position: absolute;
+                top: 30%;
+                left: 15%;
+                width: 25%;
+                h2 {
+                    font-size: 65px;
+                    &::before {
+                        left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:2549px) and (max-width:2916px){
+    #slider {
+        margin-top: 100px;
+        .slider-box {
+            .slider-text {
+                position: absolute;
+                top: 30%;
+                left: 15%;
+                width: 20%;
+                h2 {
+                    font-size: 40px;
+                    &::before {
+                        left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

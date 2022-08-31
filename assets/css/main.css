@@ -12,7 +12,7 @@
 }
 #header .header-container .header-left .header-logo {
   width: 200px;
-  height: 100px;
+  height: 120px;
 }
 #header .header-container .header-left .header-logo img {
   width: 100%;
@@ -59,6 +59,7 @@
     display: none;
   }
   #header .header-container .header-right .nav-bar ul {
+    width: 220px;
     z-index: 10;
     position: absolute;
     display: block;
@@ -67,12 +68,33 @@
     background-color: #fff;
   }
   #header .header-container .header-right .nav-bar ul li {
-    padding: 0px 50px 0px 20px;
+    padding: 0px 20px;
     margin-bottom: 15px;
   }
   #header .header-container .header-right .nav-bar ul li a {
     font-weight: 400;
     font-size: 15px;
+  }
+  #header .header-container .header-right .nav-bar .language {
+    position: relative;
+  }
+  #header .header-container .header-right .nav-bar .language .language-1 {
+    display: none;
+  }
+  #header .header-container .header-right .nav-bar .language ul {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  #header .header-container .header-right .nav-bar .language ul li {
+    margin-bottom: 0px;
   }
   #header .header-container .header-right .header-bar {
     cursor: pointer;
@@ -81,7 +103,7 @@
     display: none;
   }
 }
-@media (min-width: 576px) and (max-width: 769px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #header .header-container {
     display: flex;
     justify-content: space-between;
@@ -118,13 +140,57 @@
     font-weight: 400;
     font-size: 15px;
   }
+  #header .header-container .header-right .nav-bar .language {
+    position: relative;
+  }
+  #header .header-container .header-right .nav-bar .language .language-1 {
+    display: none;
+  }
+  #header .header-container .header-right .nav-bar .language ul {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  #header .header-container .header-right .nav-bar .language ul li {
+    margin-bottom: 0px;
+  }
   #header .header-container .header-right .header-bar .icon-2 {
     display: none;
   }
 }
-@media (min-width: 576px) and (max-width: 769px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #header .header-container .header-right .nav-bar ul {
     right: -36px;
+  }
+}
+@media (min-width: 769px) {
+  .language {
+    position: relative;
+  }
+  .language ul {
+    display: inline-block !important;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  .language ul li {
+    margin-bottom: 0px;
+  }
+  .language:hover ul {
+    opacity: 1;
+    visibility: visible;
   }
 }
 @media (min-width: 769px) {
@@ -1646,6 +1712,68 @@
   #about-us .about-us-left .about-us-left-text p {
     text-align: justify;
     width: 54%;
+  }
+}
+@media (min-width: 1765px) and (max-width: 1960px) {
+  #slider {
+    margin-top: 100px;
+  }
+  #slider .slider-box .slider-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+  }
+  #slider .slider-box .slider-text h2 {
+    font-size: 80px;
+  }
+}
+@media (min-width: 1960px) and (max-width: 2120px) {
+  #slider {
+    margin-top: 100px;
+  }
+  #slider .slider-box .slider-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 30%;
+  }
+  #slider .slider-box .slider-text h2 {
+    font-size: 65px;
+  }
+}
+@media (min-width: 2120px) and (max-width: 2548px) {
+  #slider {
+    margin-top: 100px;
+  }
+  #slider .slider-box .slider-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 25%;
+  }
+  #slider .slider-box .slider-text h2 {
+    font-size: 65px;
+  }
+  #slider .slider-box .slider-text h2::before {
+    left: 0px;
+  }
+}
+@media (min-width: 2549px) and (max-width: 2916px) {
+  #slider {
+    margin-top: 100px;
+  }
+  #slider .slider-box .slider-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 20%;
+  }
+  #slider .slider-box .slider-text h2 {
+    font-size: 40px;
+  }
+  #slider .slider-box .slider-text h2::before {
+    left: 0px;
   }
 }
 #footer {
